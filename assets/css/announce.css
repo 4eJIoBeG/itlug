@@ -1,10 +1,7 @@
 /* Announces */
 .announces {
 	min-height: 100dvh;
-	background: url('../img/offer-background-figure.svg') no-repeat top left,
-		url('../img/offer-background-figure-2.svg') no-repeat center right,
-		var(--main-gradient) no-repeat center;
-	background-size: 25%, 25%, 100%;
+	background: var(--main-gradient);
 }
 .announces-list {
 	display: flex;
@@ -82,10 +79,10 @@
 
 .announce-image {
 	aspect-ratio: 573 / 720;
-	width: 100%; /* Занимает всю ширину контейнера */
-	height: 100%; /* Занимает всю высоту контейнера */
-	object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
-	object-position: center; /* Выравнивает изображение по центру */
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 	transition: transform 0.3s ease;
 }
 
@@ -93,6 +90,7 @@
 .announce-description {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
+	line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -103,6 +101,7 @@
 	font-size: clamp(18px, 1.5vw, 30px);
 	line-height: 100%;
 	-webkit-line-clamp: 1;
+	line-clamp: 1;
 }
 
 .announce-description {
@@ -111,6 +110,7 @@
 	color: #333333;
 	margin: 0;
 	-webkit-line-clamp: 2;
+	line-clamp: 2;
 }
 
 .announce:hover .announce-image {
