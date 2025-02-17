@@ -67,18 +67,16 @@
 }
 
 .announce-image-wrapper {
-	aspect-ratio: 573 / 720;
 	height: auto;
 	width: 100%;
 	margin-bottom: 20px;
 	overflow: hidden;
 	display: flex;
-	justify-content: center; /* Горизонтальное выравнивание */
+	justify-content: center;
 	align-items: center;
 }
 
 .announce-image {
-	aspect-ratio: 573 / 720;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
