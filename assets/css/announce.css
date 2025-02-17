@@ -1,6 +1,9 @@
 /* Announces */
 
 .announces {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	min-height: 100dvh;
 	background: var(--main-gradient);
 }
