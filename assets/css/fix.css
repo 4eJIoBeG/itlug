@@ -1,0 +1,65 @@
+/* fix.css */
+
+/* 1. Улучшение высоты offer на маленьких экранах по высоте */
+@media (max-height: 400px) {
+	.offer {
+		min-height: auto; /* Разрешить секции быть меньше, чем 100dvh */
+		height: auto; /* Переопределяем height, чтобы не было конфликта */
+	}
+	.offer .container {
+		height: auto; /* Позволяем контейнеру подстраиваться под содержимое */
+		padding-top: 50px; /* Добавляем немного отступа сверху, если высота маленькая */
+		padding-bottom: 50px;
+	}
+}
+
+/* Дополнительная корректировка для очень маленьких экранов, если auto недостаточно */
+@media (max-height: 320px) {
+	.offer-logo {
+		max-width: 80%; /* Уменьшаем логотип, чтобы поместился */
+		height: auto;
+	}
+	.offer-title {
+		font-size: 16px; /* Уменьшаем заголовок */
+	}
+	.offer-support-item span {
+		font-size: 12px; /* Уменьшаем текст поддержки */
+	}
+}
+
+/* 2. Корректировка псевдоэлемента ::after в about-content на узких экранах */
+@media (max-width: 768px) {
+	.about-content::after {
+		width: 30%; /* Уменьшаем ширину декоративной линии */
+		left: 0; /* Явно позиционируем слева, чтобы начиналась от края текста */
+		margin-top: 15px; /* Корректируем отступ, так как контент сместился */
+	}
+}
+
+/* 3. Улучшение доступности nav__link на сенсорных устройствах */
+@media (hover: none) {
+	.nav__item.active .nav__link::after {
+		opacity: 1; /* Делаем подчеркивание видимым всегда, когда ссылка активна */
+		width: 100%;
+	}
+	.nav__link::after {
+		display: none; /* По умолчанию не показываем подчеркивание на сенсорных устройствах */
+	}
+	.nav__item.active .nav__link {
+		color: #e6e7e8; /* Поддерживаем цвет активной ссылки */
+	}
+}
+
+/* 4. Уточнение выравнивания в offer, если возникают проблемы на определенных разрешениях */
+@media (max-width: 640px) and (min-height: 401px) {
+	.offer {
+		min-height: 100dvh; /* Возвращаем min-height для средних по высоте мобильных */
+		height: auto;
+	}
+	.offer .container {
+		justify-content: space-around; /* Распределяем пространство более равномерно */
+		height: auto;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}
