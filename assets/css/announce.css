@@ -1,4 +1,5 @@
 /* Announces */
+
 .announces {
 	min-height: 100dvh;
 	background: var(--main-gradient);
@@ -39,31 +40,11 @@
 
 .announce-info {
 	display: flex;
-}
-
-.announce-info::before {
-	content: '';
-	width: 100%;
-	aspect-ratio: 33/44;
-	height: 100%;
-	margin-right: 2vw;
-	max-width: clamp(15px, 20%, 36px);
+	justify-content: center;
 }
 
 .announce-info-inside {
-	max-width: 80%;
-}
-
-.announce:nth-child(3n + 1) .announce-info::before {
-	background-color: var(--color-1);
-}
-
-.announce:nth-child(3n + 2) .announce-info::before {
-	background-color: var(--color-2);
-}
-
-.announce:nth-child(3n + 3) .announce-info::before {
-	background-color: var(--color-3);
+	max-width: 100%;
 }
 
 .announce-image-wrapper {
@@ -96,10 +77,9 @@
 
 .announce-title {
 	margin: 0 0 5px;
+	width: 100%;
 	font-size: clamp(18px, 1.5vw, 30px);
 	line-height: 100%;
-	-webkit-line-clamp: 1;
-	line-clamp: 1;
 }
 
 .announce-description {
@@ -115,7 +95,9 @@
 	transform: scale(1.2) rotate(5deg);
 }
 
-/* announces END */
+/* Announces END */
+
+/* Swiper */
 
 .swiper {
 	width: 100%;
@@ -140,6 +122,10 @@
 	object-fit: cover;
 }
 
+/* Swiper END */
+
+/* Button for announces section */
+
 .more-btn {
 	background-color: var(--color-2);
 	width: 190px;
@@ -151,3 +137,5 @@
 	color: #fff;
 	cursor: pointer;
 }
+
+/* Button for announces section END*/
