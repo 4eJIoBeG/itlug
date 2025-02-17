@@ -33,7 +33,7 @@
 
 .announce-link {
 	text-decoration: none;
-	color: #000;
+	color: #ffffff;
 	transition: color 0.3s ease;
 }
 
@@ -88,7 +88,7 @@
 .announce-description {
 	font-size: clamp(14px, 1.5vw, 22px);
 	line-height: 115%;
-	color: #333333;
+	color: #ffffff;
 	margin: 0;
 	-webkit-line-clamp: 2;
 	line-clamp: 2;
