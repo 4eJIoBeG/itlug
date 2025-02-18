@@ -1,740 +1,840 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<title>
-			Курс лекций, семинаров и практических занятий “ИТ по-Лугански”
-		</title>
-		<link rel="stylesheet" href="./assets/css/style.css" />
-		<link rel="stylesheet" href="./assets/css/announce.css" />
-		<link rel="stylesheet" href="./assets/css/fix.css" />
-		<!-- Link Swiper's CSS -->
-  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	</head>
-	<body>
-		<header class="header">
-			<div class="container">
-				<nav class="nav header__nav">
-					<div class="header__logo">
-						<img
-							src="./assets/img/logo-it.png"
-							alt="Сообщество ИТ специалистов г. Луганска"
-						/>
-					</div>
-					<div class="header__menu">
-						<ul class="nav__list header__nav-menu">
-							<li class="nav__item">
-								<a class="nav__link" href="#offer" data-scroll-to="offer"
-									>В начало</a
-								>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#about" data-scroll-to="about"
-									>О курсе</a
-								>
-							</li>
-							<li class="nav__item">
-								<a
-									class="nav__link"
-									href="#categories"
-									data-scroll-to="categories"
-									>Обучаемся</a
-								>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#stats" data-scroll-to="stats"
-									>Статистика</a
-								>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#reviews" data-scroll-to="reviews"
-									>Отзывы</a
-								>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#announces" data-scroll-to="announces"
-									>Анонсы</a
-								>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#masMedia" data-scroll-to="masMedia"
-									>Мы в СМИ</a
-								>
-							</li>
-						</ul>
-						<ul class="nav__list header__nav-account">
-							<li class="nav__item">
-								<a class="nav__link" href="#" data-modal-open="login"
-									>Авторизация</a
-								>
-							</li>
-						</ul>
-					</div>
-					<button class="header__burger">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-				</nav>
-			</div>
-		</header>
-		<section class="offer" id="offer">
-			<div class="container">
-				<div class="offer-content">
-					<img
-						class="offer-logo"
-						src="./assets/img/logo.svg"
-						alt="ИТ по-Лугански"
-					/>
-					<h1 class="offer-title">
-						Курс лекций, семинаров и практических занятий “ИТ по-Лугански”
-					</h1>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="Описание курса лекций, семинаров и практических занятий 'ИТ по-Лугански'">
+	<meta name="keywords" content="ИТ, Луганск, обучение, программирование, курсы, специалисты">
+	<title>
+		Курс лекций, семинаров и практических занятий “ИТ по-Лугански”
+	</title>
+	<link rel="icon" type="image/x-icon" href="/icon.png">
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<link rel="stylesheet" href="./assets/css/announce.css" />
+	<link rel="stylesheet" href="./assets/css/reviews.css" />
+	<link rel="stylesheet" href="./assets/css/masmedia.css" />
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./assets/css/fix.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="nav header__nav">
+				<div class="header__logo">
+					<img src="./assets/img/logo-it.png" alt="Сообщество ИТ специалистов г. Луганска" />
 				</div>
-				<div class="offer-footer">
-					<ul class="offer-support">
-						<li class="offer-support-item">
-							<img
-								src="./assets/img/logo-grand.svg"
-								alt="Фонд президентских грантов"
-							/>
+				<div class="header__menu">
+					<ul class="nav__list header__nav-menu">
+						<li class="nav__item">
+							<a class="nav__link" href="#offer" data-scroll-to="offer">В начало</a>
 						</li>
-						<li class="offer-support-item">
-							<img
-								src="./assets/img/logo-it.png"
-								alt="Сообщество ИТ специалистов г. Луганска"
-							/>
-							<span>Сообщество ИТ специалистов г.&nbspЛуганска</span>
+						<li class="nav__item">
+							<a class="nav__link" href="#about" data-scroll-to="about">О курсе</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#categories" data-scroll-to="categories">Обучаемся</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#stats" data-scroll-to="stats">Статистика</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#reviews" data-scroll-to="reviews">О нас</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#announces" data-scroll-to="announces">Анонсы</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#masmedias" data-scroll-to="masmedias">Мы в СМИ</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="/pages/speakers.html">Спикеры</a>
+						</li>
+					</ul>
+					<ul class="nav__list header__nav-account">
+						<li class="nav__item">
+							<a class="nav__link" href="#" data-modal-open="login">Авторизация</a>
 						</li>
 					</ul>
 				</div>
+				<button class="header__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</nav>
+		</div>
+	</header>
+	<section class="offer" id="offer">
+		<div class="container">
+			<div class="offer-content">
+				<img class="offer-logo" src="./assets/img/logo.svg" alt="ИТ по-Лугански" />
+				<h1 class="offer-title">
+					Курс лекций, семинаров и практических занятий “ИТ по-Лугански”
+				</h1>
 			</div>
-		</section>
-		<section class="about" id="about">
-			<div class="container">
-				<div class="about-image-wrapper">
-					<img class="about-img" src="./assets/img/about.jpg" alt="О курсе" />
-				</div>
-				<article class="about-content">
-					<h2 class="section-title">О курсе</h2>
-					<p class="about-text">
-						Курс лекций, семинаров и практических занятий “ИТ по-Лугански” - это
-						курс лекций, семинаров и практических занятий, разработанный на базе
-						более чем четырехлетнего анализа области ИТ-технологий в Луганской
-						Народной Республике.
-					</p>
-					<p class="about-text">
-						За эти годы путем личного общения, онлайн-встреч, анкетирования,
-						тестов мы выявили самые интересующие вопросы ИТ-специалистов, что
-						позволило создать интересный и полезный курс семинаров.
-					</p>
-					<p class="about-text">
-						Курс создан с учетом занятости слушателей, чтобы все могли попасть
-						на встречу лично, либо онлайн.
-					</p>
-					<p class="about-text">
-						Среди семинаров разработаны практические задания по созданию
-						программ разного направления: от простого сайта до сложных систем по
-						контролю доступа.
-					</p>
-					<p class="about-text">
-						Проект реализован при поддержке Фонда президентских грантов.
-					</p>
-				</article>
-			</div>
-		</section>
-		<section class="categories" id="categories">
-			<div class="container">
-				<h2 class="section-title">Обучаемся</h2>
-				<div class="categories-list">
-					<article class="category">
-						<a href="#">
-							<div class="category-image-wrapper">
-								<img
-									class="category-image"
-									src="./assets/img/category/documents.jpg"
-									alt="Работа с клиентом"
-								/>
-							</div>
-						</a>
-						<div class="category-info">
-							<div class="category-info-inside">
-								<a class="category-link" href="#">
-									<h3 class="category-title">Работа с клиентом</h3>
-								</a>
-								<p class="category-description">
-									Составление ТЗ, <br />
-									документы на ИТ технологии
-								</p>
-							</div>
-						</div>
-					</article>
-					<article class="category">
-						<a href="#">
-							<div class="category-image-wrapper">
-								<img
-									class="category-image"
-									src="./assets/img/category/design.jpg"
-									alt="Дизайн"
-								/>
-							</div>
-						</a>
-						<div class="category-info">
-							<div class="category-info-inside">
-								<a href="#" class="category-link">
-									<h3 class="category-title">Дизайн</h3>
-								</a>
-								<p class="category-description">
-									Цвет, шрифт, он-лайн помощники, правила макетирования
-								</p>
-							</div>
-						</div>
-					</article>
-					<article class="category">
-						<a href="#">
-							<div class="category-image-wrapper">
-								<img
-									class="category-image"
-									src="./assets/img/category/frontend.jpg"
-									alt="Frontend"
-								/>
-							</div>
-						</a>
-						<div class="category-info">
-							<div class="category-info-inside">
-								<a href="#" class="category-link">
-									<h3 class="category-title">Frontend</h3>
-								</a>
-								<p class="category-description">
-									Интерфейсы, верстка, фреймворки адаптивность, оптимизация,
-									JavaScript
-								</p>
-							</div>
-						</div>
-					</article>
-					<article class="category">
-						<a href="#">
-							<div class="category-image-wrapper">
-								<img
-									class="category-image"
-									src="./assets/img/category/backend.jpg"
-									alt="Backend"
-								/>
-							</div>
-						</a>
-						<div class="category-info">
-							<div class="category-info-inside">
-								<a href="#" class="category-link">
-									<h3 class="category-title">Backend</h3>
-								</a>
-								<p class="category-description">
-									Сервер, приложения, взаимодействие
-								</p>
-							</div>
-						</div>
-					</article>
-					<article class="category">
-						<a href="#">
-							<div class="category-image-wrapper">
-								<img
-									class="category-image"
-									src="./assets/img/category/mobile.jpg"
-									alt="Мобильная разработка"
-								/>
-							</div>
-						</a>
-						<div class="category-info">
-							<div class="category-info-inside">
-								<a href="#" class="category-link">
-									<h3 class="category-title">Мобильная разработка</h3>
-								</a>
-								<p class="category-description">
-									Приложения для мобильных устройств
-								</p>
-							</div>
-						</div>
-					</article>
-					<article class="category">
-						<a href="#">
-							<div class="category-image-wrapper">
-								<img
-									class="category-image"
-									src="./assets/img/category/marketing.png"
-									alt="Маркетинг и ИТ"
-								/>
-							</div>
-						</a>
-						<div class="category-info">
-							<div class="category-info-inside">
-								<a href="#" class="category-link">
-									<h3 class="category-title">Маркетинг и ИТ</h3>
-								</a>
-								<p class="category-description">
-									Продвижение продуктов и услуг в сфере ИТ
-								</p>
-							</div>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
-		<section class="stats" id="stats">
-			<div class="container">
-				<h2 class="section-title">Немного цифр</h2>
-				<ul class="stats-list">
-					<li class="stat-item">
-						<div class="stat-info">
-							<div class="stat-digit" data-count="28">0</div>
-							<p class="stat-desc">Лекций и практических<br />занятий</p>
-						</div>
-						<div class="stat-icon">
-							<img
-								src="./assets/img/stat/ico-stat-1.svg"
-								alt="28 Лекций и практических занятий"
-							/>
-						</div>
+			<div class="offer-footer">
+				<ul class="offer-support">
+					<li class="offer-support-item">
+						<img src="./assets/img/logo-grand.svg" alt="Фонд президентских грантов" />
 					</li>
-					<li class="stat-item-divider"></li>
-					<li class="stat-item">
-						<div class="stat-info">
-							<div class="stat-digit" data-count="10">0</div>
-							<p class="stat-desc">Спикеров<br />практиков</p>
-						</div>
-						<div class="stat-icon">
-							<img
-								src="./assets/img/stat/ico-stat-2.svg"
-								alt="10 Спикеров практиков"
-							/>
-						</div>
-					</li>
-					<li class="stat-item-divider"></li>
-					<li class="stat-item">
-						<div class="stat-info">
-							<div class="stat-digit" data-count="2">0</div>
-							<p class="stat-desc">Хакатона с реальными<br />компаниями</p>
-						</div>
-						<div class="stat-icon">
-							<img
-								src="./assets/img/stat/ico-stat-3.svg"
-								alt="2 Хакатона с реальными компаниями"
-							/>
-						</div>
-					</li>
-					<li class="stat-item-divider"></li>
-					<li class="stat-item">
-						<div class="stat-info">
-							<div class="stat-digit" data-count="80">0</div>
-							<p class="stat-desc">Обучающихся<br />товарищей</p>
-						</div>
-						<div class="stat-icon">
-							<img
-								src="./assets/img/stat/ico-stat-4.svg"
-								alt="80 Обучающихся товарищей"
-							/>
-						</div>
+					<li class="offer-support-item">
+						<img src="./assets/img/logo-it.png" alt="Сообщество ИТ специалистов г. Луганска" />
+						<span>Сообщество ИТ специалистов г.&nbspЛуганска</span>
 					</li>
 				</ul>
 			</div>
-		</section>
-		
-		<section class="reviews" id="reviews">
-			<div class="container">
-				<h2 class="section-title">Отзывы</h2>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="container">
+			<div class="about-image-wrapper">
+				<img class="about-img" src="./assets/img/about.jpg" alt="О курсе" />
 			</div>
-		</section>
-		<section class="announces" id="announces">
-			<div class="container">
-				<h2 class="section-title">Анонсы</h2>
-				<div class="announces-list">
-					<div class="swiper mySwiper">
-						<div class="swiper-wrapper">
-							<article class="announce swiper-slide">
-								<a href="#">
-									<div class="announce-image-wrapper">
-										<img
-											class="announce-image"
-											src="./assets/img/announce/1.jpg"
-											alt="Backend"
-										/>
-									</div>
-								</a>
-								<div class="announce-info">
-									<div class="announce-info-inside">
-										<a class="announce-link" href="#">
-											<h3 class="announce-title">Backend</h3>
-										</a>
-										<p class="announce-description">
-											Лектор: Фамилия Имя <br />
-											Коворкинг Cluster - 07.09.2024 - 14:00
-										</p>
-									</div>
-								</div>
-							</article>
-							<article class="announce swiper-slide">
-								<a href="#">
-									<div class="announce-image-wrapper">
-										<img
-											class="announce-image"
-											src="./assets/img/announce/2.jpg"
-											alt="Разработка мобильных приложений"
-										/>
-									</div>
-								</a>
-								<div class="announce-info">
-									<div class="announce-info-inside">
-										<a href="#" class="announce-link">
-											<h3 class="announce-title">Разработка мобильных приложений</h3>
-										</a>
-										<p class="announce-description">
-											Лектор: Фамилия Имя <br />
-													Коворкинг Cluster - 19.10.2024 - 14:00
-										</p>
-									</div>
-								</div>
-							</article>
-							<article class="announce swiper-slide">
-								<a href="#">
-									<div class="announce-image-wrapper">
-										<img
-											class="announce-image"
-											src="./assets/img/announce/3.jpg"
-											alt="Frontend"
-										/>
-									</div>
-								</a>
-								<div class="announce-info">
-									<div class="announce-info-inside">
-										<a href="#" class="announce-link">
-											<h3 class="announce-title">Frontend</h3>
-										</a>
-										<p class="announce-description">
-											Лектор: Фамилия Имя <br />
-													Коворкинг Cluster - 24.08.2024 - 14:00
-										</p>
-									</div>
-								</div>
-							</article>
-							<article class="announce swiper-slide">
-								<a href="#">
-									<div class="announce-image-wrapper">
-										<img
-											class="announce-image"
-											src="./assets/img/announce/4.jpg"
-											alt="Веб-дизайн и его практическое применение в ИТ"
-										/>
-									</div>
-								</a>
-								<div class="announce-info">
-									<div class="announce-info-inside">
-										<a href="#" class="announce-link">
-											<h3 class="announce-title">Веб-дизайн и его практическое применение в ИТ</h3>
-										</a>
-										<p class="announce-description">
-											Лектор: Фамилия Имя <br />
-													Коворкинг Cluster - 17.08.2024 - 14:00
-										</p>
-									</div>
-								</div>
-							</article>
+			<article class="about-content">
+				<h2 class="section-title">О курсе</h2>
+				<p class="about-text">
+					Курс лекций, семинаров и практических занятий “ИТ по-Лугански” - это
+					курс лекций, семинаров и практических занятий, разработанный на базе
+					более чем четырехлетнего анализа области ИТ-технологий в Луганской
+					Народной Республике.
+				</p>
+				<p class="about-text">
+					За эти годы путем личного общения, онлайн-встреч, анкетирования,
+					тестов мы выявили самые интересующие вопросы ИТ-специалистов, что
+					позволило создать интересный и полезный курс семинаров.
+				</p>
+				<p class="about-text">
+					Курс создан с учетом занятости слушателей, чтобы все могли попасть
+					на встречу лично, либо онлайн.
+				</p>
+				<p class="about-text">
+					Среди семинаров разработаны практические задания по созданию
+					программ разного направления: от простого сайта до сложных систем по
+					контролю доступа.
+				</p>
+				<p class="about-text">
+					Проект реализован при поддержке Фонда президентских грантов.
+				</p>
+			</article>
+		</div>
+	</section>
+	<section class="categories" id="categories">
+		<div class="container">
+			<h2 class="section-title">Обучаемся</h2>
+			<div class="categories-list">
+				<article class="category">
+					<a href="#">
+						<div class="category-image-wrapper">
+							<img class="category-image" src="./assets/img/category/documents.jpg" alt="Работа с клиентом" />
 						</div>
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>
-					<button class="more-btn">Больше</button>
-				</div>
-		</section>
-		<section class="masMedia" id="masMedia">
-			<div class="container">
-				<h2 class="section-title">Мы в СМИ</h2>
-			</div>
-		</section>
-		<footer class="footer">
-			<div class="container">
-				<hr class="footer-hr" />
-				<nav class="footer-content">
-					<ul class="footer-col footer-logos">
-						<li class="footer-logo-item">
-							<img
-								class="footer-logo"
-								src="./assets/img/logo.svg"
-								alt="ИТ по-Лугански"
-							/>
-							<p class="footer-title">
-								Курс лекций и семинаров <br />
-								“ИТ по-Лугански”
-							</p>
-						</li>
-						<li class="footer-logo-item">
-							<a href="https://президентскиегранты.рф/">
-								<img
-									class="footer-logo"
-									src="./assets/img/logo-grand.svg"
-									alt="Фонд президентских грантов"
-								/>
+					</a>
+					<div class="category-info">
+						<div class="category-info-inside">
+							<a class="category-link" href="#">
+								<h3 class="category-title">Работа с клиентом</h3>
 							</a>
-						</li>
-					</ul>
-					<ul class="footer-col footer-nav">
-						<li class="footer-nav-item">
-							<a class="footer-link" href="#about" data-scroll-to="about"
-								>О курсе</a
-							>
-						</li>
-						<li class="footer-nav-item">
-							<a
-								class="footer-link"
-								href="#categories"
-								data-scroll-to="categories"
-								>Программа</a
-							>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="#">Лекции</a>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="#announce" data-scroll-to="announce"
-								>Анонсы</a
-							>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="#">Спикеры</a>
-						</li>
-					</ul>
-					<ul class="footer-col footer-nav footer-nav-2">
-						<li class="footer-nav-item">
-							<a class="footer-link" href="#">Хакатон</a>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="#">Поддержка</a>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="#">Проекты</a>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="#">Сообщество</a>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="#">Коворкинг</a>
-						</li>
-					</ul>
-					<ul class="footer-col footer-contact">
-						<li class="footer-nav-item">
-							<a class="footer-link" href="https://t.me/it_po_lug"
-								>t.me/it_po_lug</a
-							>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="https://t.me/luganskIt"
-								>t.me/luganskIt</a
-							>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="https://vk.com/luganskdev"
-								>vk.com/luganskdev</a
-							>
-						</li>
-						<li class="footer-nav-item">
-							<a class="footer-link" href="tel:+79595555245"
-								>+7 (959) 55 55 245</a
-							>
-						</li>
-						<li class="footer-nav-item">
-							<address class="footer-address">
-								г.&nbsp;Луганск, ул.&nbsp;Ленина, д.&nbsp;38, стр.&nbsp;3
-							</address>
-						</li>
-					</ul>
-				</nav>
-				<div class="footer-content">
-					<div class="footer-col footer-copyright">
-						<p>Курс “ИТ по-Лугански”, 2024-2025 © Все права защищены.</p>
-						<p>Сообщество ИТ специалистов Луганска</p>
+							<p class="category-description">
+								Составление ТЗ, <br />
+								документы на ИТ технологии
+							</p>
+						</div>
 					</div>
-				</div>
+				</article>
+				<article class="category">
+					<a href="#">
+						<div class="category-image-wrapper">
+							<img class="category-image" src="./assets/img/category/design.jpg" alt="Дизайн" />
+						</div>
+					</a>
+					<div class="category-info">
+						<div class="category-info-inside">
+							<a href="#" class="category-link">
+								<h3 class="category-title">Дизайн</h3>
+							</a>
+							<p class="category-description">
+								Цвет, шрифт, он-лайн помощники, правила макетирования
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="category">
+					<a href="#">
+						<div class="category-image-wrapper">
+							<img class="category-image" src="./assets/img/category/frontend.jpg" alt="Frontend" />
+						</div>
+					</a>
+					<div class="category-info">
+						<div class="category-info-inside">
+							<a href="#" class="category-link">
+								<h3 class="category-title">Frontend</h3>
+							</a>
+							<p class="category-description">
+								Интерфейсы, верстка, фреймворки адаптивность, оптимизация,
+								JavaScript
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="category">
+					<a href="#">
+						<div class="category-image-wrapper">
+							<img class="category-image" src="./assets/img/category/backend.jpg" alt="Backend" />
+						</div>
+					</a>
+					<div class="category-info">
+						<div class="category-info-inside">
+							<a href="#" class="category-link">
+								<h3 class="category-title">Backend</h3>
+							</a>
+							<p class="category-description">
+								Сервер, приложения, взаимодействие
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="category">
+					<a href="#">
+						<div class="category-image-wrapper">
+							<img class="category-image" src="./assets/img/category/mobile.jpg" alt="Мобильная разработка" />
+						</div>
+					</a>
+					<div class="category-info">
+						<div class="category-info-inside">
+							<a href="#" class="category-link">
+								<h3 class="category-title">Мобильная разработка</h3>
+							</a>
+							<p class="category-description">
+								Приложения для мобильных устройств
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="category">
+					<a href="#">
+						<div class="category-image-wrapper">
+							<img class="category-image" src="./assets/img/category/marketing.png" alt="Маркетинг и ИТ" />
+						</div>
+					</a>
+					<div class="category-info">
+						<div class="category-info-inside">
+							<a href="#" class="category-link">
+								<h3 class="category-title">Маркетинг и ИТ</h3>
+							</a>
+							<p class="category-description">
+								Продвижение продуктов и услуг в сфере ИТ
+							</p>
+						</div>
+					</div>
+				</article>
 			</div>
-		</footer>
-		<dialog class="modal" data-modal="login">
-			<button class="modal-close" data-modal-close>&times;</button>
-			<div class="modal-dialog">
-				<div class="auth-content">
-					<div class="auth-image">
-						<img src="assets/img/sign-in.svg" alt="Авторизация" />
+		</div>
+	</section>
+	<section class="stats" id="stats">
+		<div class="container">
+			<h2 class="section-title">Немного цифр</h2>
+			<ul class="stats-list">
+				<li class="stat-item">
+					<div class="stat-info">
+						<div class="stat-digit" data-count="28">0</div>
+						<p class="stat-desc">Лекций и практических<br />занятий</p>
 					</div>
-					<div class="auth-form">
-						<form class="form" id="login-form">
-							<div class="modal-header">
-								<h3 class="modal-title">Авторизация</h3>
-							</div>
-							<div class="modal-body">
-								<div class="form-fieldset">
-									<div class="form-group">
-										<label class="form-label" for="login-form-login">
-											<img src="assets/img/icon-login.svg" alt="Логин" />
-										</label>
-										<input
-											id="login-form-login"
-											type="text"
-											class="form-control"
-											name="login"
-											placeholder="Логин"
-										/>
-									</div>
-									<div class="form-group">
-										<label class="form-label" for="login-form-password">
-											<img src="assets/img/icon-password.svg" alt="Пароль" />
-										</label>
-										<input
-											id="login-form-password"
-											type="password"
-											class="form-control"
-											name="password_login"
-											placeholder="Пароль"
-										/>
-									</div>
-								</div>
-								<div class="form-fieldset-alert form-fieldset-error hide"></div>
-								<div
-									class="form-fieldset-alert form-fieldset-success hide"
-								></div>
-							</div>
-							<div class="modal-footer">
-								<div class="modal-btn-group">
-									<button class="btn" type="submit">Войти</button>
-								</div>
-								<div class="modal-other-action">
-									Нет аккаунта?
-									<a href="#" class="modal-link" data-modal-open="register"
-										>Создать аккаунт</a
-									>
-								</div>
-							</div>
-							<div class="form-preloader">
-								<img src="assets/img/preloader.svg" />
-							</div>
-						</form>
+					<div class="stat-icon">
+						<img src="./assets/img/stat/ico-stat-1.svg" alt="28 Лекций и практических занятий" />
 					</div>
-				</div>
-			</div>
-		</dialog>
-		<dialog class="modal" data-modal="register">
-			<button class="modal-close" data-modal-close>&times;</button>
-			<div class="modal-dialog">
-				<div class="auth-content reverse">
-					<div class="auth-image">
-						<img src="assets/img/sign-up.svg" alt="Регистрация" />
+				</li>
+				<li class="stat-item-divider"></li>
+				<li class="stat-item">
+					<div class="stat-info">
+						<div class="stat-digit" data-count="10">0</div>
+						<p class="stat-desc">Спикеров<br />практиков</p>
 					</div>
-					<div class="auth-form">
-						<form class="form" id="register-form">
-							<div class="modal-header">
-								<h3 class="modal-title">Регистрация</h3>
-							</div>
-							<div class="modal-body">
-								<div class="form-fieldset">
-									<div class="form-group">
-										<label class="form-label" for="register-form-login">
-											<img src="assets/img/icon-login.svg" alt="Ваше имя" />
-										</label>
-										<input
-											id="register-form-login"
-											type="text"
-											class="form-control"
-											name="name"
-											placeholder="Ваше имя"
-										/>
-									</div>
-									<div class="form-group">
-										<label class="form-label" for="register-form-email">
-											<img src="assets/img/icon-email.svg" alt="Ваш email" />
-										</label>
-										<input
-											id="register-form-email"
-											type="text"
-											class="form-control"
-											name="email"
-											placeholder="Ваш email"
-										/>
-									</div>
-									<div class="form-group">
-										<label class="form-label" for="register-form-password">
-											<img src="assets/img/icon-password.svg" alt="Логин" />
-										</label>
-										<input
-											id="register-form-password"
-											type="password"
-											class="form-control"
-											name="password"
-											placeholder="Пароль"
-										/>
-									</div>
-									<div class="form-group">
-										<label class="form-label" for="register-form-password2">
-											<img src="assets/img/icon-password.svg" alt="Пароль" />
-										</label>
-										<input
-											id="register-form-password2"
-											type="password"
-											class="form-control"
-											name="password2"
-											placeholder="Пароль еще раз"
-										/>
-									</div>
-								</div>
-								<div class="form-fieldset-alert form-fieldset-error hide"></div>
-								<div
-									class="form-fieldset-alert form-fieldset-success hide"
-								></div>
-							</div>
-							<div class="modal-footer">
-								<div class="modal-btn-group">
-									<button class="btn" type="submit">Отправить</button>
-								</div>
-								<div class="modal-other-action">
-									Уже есть аккаунт?
-									<a href="#" class="modal-link" data-modal-open="login"
-										>Войти</a
-									>
-								</div>
-							</div>
-							<div class="form-preloader">
-								<img src="assets/img/preloader.svg" />
-							</div>
-						</form>
+					<div class="stat-icon">
+						<img src="./assets/img/stat/ico-stat-2.svg" alt="10 Спикеров практиков" />
 					</div>
-				</div>
-			</div>
-		</dialog>
-		<div class="modal-backdrop"></div>
+				</li>
+				<li class="stat-item-divider"></li>
+				<li class="stat-item">
+					<div class="stat-info">
+						<div class="stat-digit" data-count="2">0</div>
+						<p class="stat-desc">Хакатона с реальными<br />компаниями</p>
+					</div>
+					<div class="stat-icon">
+						<img src="./assets/img/stat/ico-stat-3.svg" alt="2 Хакатона с реальными компаниями" />
+					</div>
+				</li>
+				<li class="stat-item-divider"></li>
+				<li class="stat-item">
+					<div class="stat-info">
+						<div class="stat-digit" data-count="80">0</div>
+						<p class="stat-desc">Обучающихся<br />товарищей</p>
+					</div>
+					<div class="stat-icon">
+						<img src="./assets/img/stat/ico-stat-4.svg" alt="80 Обучающихся товарищей" />
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
 
-		<!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<section class="reviews" id="reviews">
+		<div class="container">
+			<h2 class="section-title">Что о нас говорят?</h2>
+			<div class="reviews-list">
+				<article class="review">
+					<div class="review-info">
+						<div class="review-info-inside">
+							<span>
+								<img src="./assets/img/reviews/Vector.png" alt="Frontend" />
+							</span>
+							<p class="review-description">
+								Господа, современная методология разработки прекрасно подходит для реализации переосмысления
+								внешнеэкономических политик. Современные технологии достигли такого уровня,
+							</p>
+						</div>
+					</div>
+					<div class="review-image-wrapper">
+						<img class="review-image" src="./assets/img/reviews/avatar.png" alt="Андрей Бобров" />
+						<span>Андрей Бобров</span>
+						<span>
+							<img src="./assets/img/reviews/stars.png" alt="Frontend" />
+						</span>
+					</div>
+				</article>
+				<article class="review">
+					<div class="review-info">
+						<div class="review-info-inside">
+							<span>
+								<img src="./assets/img/reviews/Vector.png" alt="Frontend" />
+							</span>
+							<p class="review-description">
+								Господа, современная методология разработки прекрасно подходит для реализации переосмысления
+								внешнеэкономических политик. Современные технологии достигли такого уровня,
+							</p>
+						</div>
+					</div>
+					<div class="review-image-wrapper">
+						<img class="review-image" src="./assets/img/reviews/avatar.png" alt="Андрей Бобров" />
+						<span>Андрей Бобров</span>
+						<span>
+							<img src="./assets/img/reviews/stars.png" alt="Frontend" />
+						</span>
+					</div>
+				</article>
+				<article class="review">
+					<div class="review-info">
+						<div class="review-info-inside">
+							<span>
+								<img src="./assets/img/reviews/Vector.png" alt="Frontend" />
+							</span>
+							<p class="review-description">
+								Господа, современная методология разработки прекрасно подходит для реализации переосмысления
+								внешнеэкономических политик. Современные технологии достигли такого уровня,
+							</p>
+						</div>
+					</div>
+					<div class="review-image-wrapper">
+						<img class="review-image" src="./assets/img/reviews/avatar.png" alt="Андрей Бобров" />
+						<span>Андрей Бобров</span>
+						<span>
+							<img src="./assets/img/reviews/stars.png" alt="Frontend" />
+						</span>
+					</div>
+				</article>
+			</div>
+			<button class="more-btn">Больше</button>
+		</div>
+	</section>
+	<section class="announces" id="announces">
+		<div class="container">
+			<h2 class="section-title">Анонсы</h2>
+			<div class="announces-list">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<article class="announce swiper-slide">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/announce/1.jpg" alt="Backend" />
+								</div>
+							</a>
+							<div class="announce-info">
+								<div class="announce-info-inside">
+									<a class="announce-link" href="#">
+										<h3 class="announce-title">Backend</h3>
+									</a>
+									<p class="announce-description">
+										Лектор: Фамилия Имя <br />
+										Коворкинг Cluster - 07.09.2024 - 14:00
+									</p>
+								</div>
+							</div>
+						</article>
+						<article class="announce swiper-slide">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/announce/2.jpg" alt="Разработка мобильных приложений" />
+								</div>
+							</a>
+							<div class="announce-info">
+								<div class="announce-info-inside">
+									<a href="#" class="announce-link">
+										<h3 class="announce-title">Разработка мобильных приложений</h3>
+									</a>
+									<p class="announce-description">
+										Лектор: Фамилия Имя <br />
+										Коворкинг Cluster - 19.10.2024 - 14:00
+									</p>
+								</div>
+							</div>
+						</article>
+						<article class="announce swiper-slide">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/announce/3.jpg" alt="Frontend" />
+								</div>
+							</a>
+							<div class="announce-info">
+								<div class="announce-info-inside">
+									<a href="#" class="announce-link">
+										<h3 class="announce-title">Frontend</h3>
+									</a>
+									<p class="announce-description">
+										Лектор: Фамилия Имя <br />
+										Коворкинг Cluster - 24.08.2024 - 14:00
+									</p>
+								</div>
+							</div>
+						</article>
+						<article class="announce swiper-slide">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/announce/4.jpg"
+										alt="Веб-дизайн и его практическое применение в ИТ" />
+								</div>
+							</a>
+							<div class="announce-info">
+								<div class="announce-info-inside">
+									<a href="#" class="announce-link">
+										<h3 class="announce-title">Веб-дизайн и его практическое применение в ИТ</h3>
+									</a>
+									<p class="announce-description">
+										Лектор: Фамилия Имя <br />
+										Коворкинг Cluster - 17.08.2024 - 14:00
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<button class="more-btn">Больше</button>
+			</div>
+	</section>
+	<section class="masmedias" id="masmedias">
+		<div class="container">
+			<h2 class="section-title">Мы в СМИ</h2>
+			<div class="masmedia-list">
+				<article class="masmedia">
+					<div class="masmedia-info">
+						<div class="masmedia-info-inside">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/masmedia/preview.png" alt="О нас в сми" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="masmedia-image-wrapper">
+						<div>Андрей Бобров</div>
+						<div>
+							<span>
+								<img src="./assets/img/masMedia/eye-icon.png" alt="views counter" />
+							</span>100
+						</div>
+					</div>
+				</article>
+				<article class="masmedia">
+					<div class="masmedia-info">
+						<div class="masmedia-info-inside">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/masmedia/preview.png" alt="О нас в сми" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="masmedia-image-wrapper">
+						<div>Андрей Бобров</div>
+						<div>
+							<span>
+								<img src="./assets/img/masMedia/eye-icon.png" alt="views counter" />
+							</span>100
+						</div>
+					</div>
+				</article>
+				<article class="masmedia">
+					<div class="masmedia-info">
+						<div class="masmedia-info-inside">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/masmedia/preview.png" alt="О нас в сми" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="masmedia-image-wrapper">
+						<div>Андрей Бобров</div>
+						<div>
+							<span>
+								<img src="./assets/img/masMedia/eye-icon.png" alt="views counter" />
+							</span>100
+						</div>
+					</div>
+				</article>
+				<article class="masmedia">
+					<div class="masmedia-info">
+						<div class="masmedia-info-inside">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/masmedia/preview.png" alt="О нас в сми" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="masmedia-image-wrapper">
+						<div>Андрей Бобров</div>
+						<div>
+							<span>
+								<img src="./assets/img/masMedia/eye-icon.png" alt="views counter" />
+							</span>100
+						</div>
+					</div>
+				</article>
+				<article class="masmedia">
+					<div class="masmedia-info">
+						<div class="masmedia-info-inside">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/masmedia/preview.png" alt="О нас в сми" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="masmedia-image-wrapper">
+						<div>Андрей Бобров</div>
+						<div>
+							<span>
+								<img src="./assets/img/masMedia/eye-icon.png" alt="views counter" />
+							</span>100
+						</div>
+					</div>
+				</article>
+				<article class="masmedia">
+					<div class="masmedia-info">
+						<div class="masmedia-info-inside">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/masmedia/preview.png" alt="О нас в сми" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="masmedia-image-wrapper">
+						<div>Андрей Бобров</div>
+						<div>
+							<span>
+								<img src="./assets/img/masMedia/eye-icon.png" alt="views counter" />
+							</span>100
+						</div>
+					</div>
+				</article>
+				<article class="masmedia">
+					<div class="masmedia-info">
+						<div class="masmedia-info-inside">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/masmedia/preview.png" alt="О нас в сми" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="masmedia-image-wrapper">
+						<div>Андрей Бобров</div>
+						<div>
+							<span>
+								<img src="./assets/img/masMedia/eye-icon.png" alt="views counter" />
+							</span>100
+						</div>
+					</div>
+				</article>
+				<article class="masmedia">
+					<div class="masmedia-info">
+						<div class="masmedia-info-inside">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/masmedia/preview.png" alt="О нас в сми" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="masmedia-image-wrapper">
+						<div>Андрей Бобров</div>
+						<div>
+							<span>
+								<img src="./assets/img/masMedia/eye-icon.png" alt="views counter" />
+							</span>100
+						</div>
+					</div>
+				</article>
+				<article class="masmedia">
+					<div class="masmedia-info">
+						<div class="masmedia-info-inside">
+							<a href="#">
+								<div class="announce-image-wrapper">
+									<img class="announce-image" src="./assets/img/masmedia/preview.png" alt="О нас в сми" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="masmedia-image-wrapper">
+						<div>Андрей Бобров</div>
+						<div>
+							<span>
+								<img src="./assets/img/masMedia/eye-icon.png" alt="views counter" />
+							</span>100
+						</div>
+					</div>
+				</article>
+			</div>
+			<button class="more-btn">Больше</button>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<hr class="footer-hr" />
+			<nav class="footer-content">
+				<ul class="footer-col footer-logos">
+					<li class="footer-logo-item">
+						<img class="footer-logo" src="./assets/img/logo.svg" alt="ИТ по-Лугански" />
+						<p class="footer-title">
+							Курс лекций и семинаров <br />
+							“ИТ по-Лугански”
+						</p>
+					</li>
+					<li class="footer-logo-item">
+						<a href="https://президентскиегранты.рф/">
+							<img class="footer-logo" src="./assets/img/logo-grand.svg" alt="Фонд президентских грантов" />
+						</a>
+					</li>
+				</ul>
+				<ul class="footer-col footer-nav">
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#about" data-scroll-to="about">О курсе</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#categories" data-scroll-to="categories">Программа</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#">Лекции</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#announce" data-scroll-to="announce">Анонсы</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#">Спикеры</a>
+					</li>
+				</ul>
+				<ul class="footer-col footer-nav footer-nav-2">
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#">Хакатон</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#">Поддержка</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#">Проекты</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#">Сообщество</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="#">Коворкинг</a>
+					</li>
+				</ul>
+				<ul class="footer-col footer-contact">
+					<li class="footer-nav-item">
+						<a class="footer-link" href="https://t.me/it_po_lug">t.me/it_po_lug</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="https://t.me/luganskIt">t.me/luganskIt</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="https://vk.com/luganskdev">vk.com/luganskdev</a>
+					</li>
+					<li class="footer-nav-item">
+						<a class="footer-link" href="tel:+79595555245">+7 (959) 55 55 245</a>
+					</li>
+					<li class="footer-nav-item">
+						<address class="footer-address">
+							г.&nbsp;Луганск, ул.&nbsp;Ленина, д.&nbsp;38, стр.&nbsp;3
+						</address>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer-content">
+				<div class="footer-col footer-copyright">
+					<p>Курс “ИТ по-Лугански”, 2024-2025 © Все права защищены.</p>
+					<p>Сообщество ИТ специалистов Луганска</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<dialog class="modal" data-modal="login">
+		<button class="modal-close" data-modal-close>&times;</button>
+		<div class="modal-dialog">
+			<div class="auth-content">
+				<div class="auth-image">
+					<img src="assets/img/sign-in.svg" alt="Авторизация" />
+				</div>
+				<div class="auth-form">
+					<form class="form" id="login-form">
+						<div class="modal-header">
+							<h3 class="modal-title">Авторизация</h3>
+						</div>
+						<div class="modal-body">
+							<div class="form-fieldset">
+								<div class="form-group">
+									<label class="form-label" for="login-form-login">
+										<img src="assets/img/icon-login.svg" alt="Логин" />
+									</label>
+									<input id="login-form-login" type="text" class="form-control" name="login" placeholder="Логин" />
+								</div>
+								<div class="form-group">
+									<label class="form-label" for="login-form-password">
+										<img src="assets/img/icon-password.svg" alt="Пароль" />
+									</label>
+									<input id="login-form-password" type="password" class="form-control" name="password_login"
+										placeholder="Пароль" />
+								</div>
+							</div>
+							<div class="form-fieldset-alert form-fieldset-error hide"></div>
+							<div class="form-fieldset-alert form-fieldset-success hide"></div>
+						</div>
+						<div class="modal-footer">
+							<div class="modal-btn-group">
+								<button class="btn" type="submit">Войти</button>
+							</div>
+							<div class="modal-other-action">
+								Нет аккаунта?
+								<a href="#" class="modal-link" data-modal-open="register">Создать аккаунт</a>
+							</div>
+						</div>
+						<div class="form-preloader">
+							<img src="assets/img/preloader.svg" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<dialog class="modal" data-modal="register">
+		<button class="modal-close" data-modal-close>&times;</button>
+		<div class="modal-dialog">
+			<div class="auth-content reverse">
+				<div class="auth-image">
+					<img src="assets/img/sign-up.svg" alt="Регистрация" />
+				</div>
+				<div class="auth-form">
+					<form class="form" id="register-form">
+						<div class="modal-header">
+							<h3 class="modal-title">Регистрация</h3>
+						</div>
+						<div class="modal-body">
+							<div class="form-fieldset">
+								<div class="form-group">
+									<label class="form-label" for="register-form-login">
+										<img src="assets/img/icon-login.svg" alt="Ваше имя" />
+									</label>
+									<input id="register-form-login" type="text" class="form-control" name="name" placeholder="Ваше имя" />
+								</div>
+								<div class="form-group">
+									<label class="form-label" for="register-form-email">
+										<img src="assets/img/icon-email.svg" alt="Ваш email" />
+									</label>
+									<input id="register-form-email" type="text" class="form-control" name="email"
+										placeholder="Ваш email" />
+								</div>
+								<div class="form-group">
+									<label class="form-label" for="register-form-password">
+										<img src="assets/img/icon-password.svg" alt="Логин" />
+									</label>
+									<input id="register-form-password" type="password" class="form-control" name="password"
+										placeholder="Пароль" />
+								</div>
+								<div class="form-group">
+									<label class="form-label" for="register-form-password2">
+										<img src="assets/img/icon-password.svg" alt="Пароль" />
+									</label>
+									<input id="register-form-password2" type="password" class="form-control" name="password2"
+										placeholder="Пароль еще раз" />
+								</div>
+							</div>
+							<div class="form-fieldset-alert form-fieldset-error hide"></div>
+							<div class="form-fieldset-alert form-fieldset-success hide"></div>
+						</div>
+						<div class="modal-footer">
+							<div class="modal-btn-group">
+								<button class="btn" type="submit">Отправить</button>
+							</div>
+							<div class="modal-other-action">
+								Уже есть аккаунт?
+								<a href="#" class="modal-link" data-modal-open="login">Войти</a>
+							</div>
+						</div>
+						<div class="form-preloader">
+							<img src="assets/img/preloader.svg" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	<div class="modal-backdrop"></div>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			loop: true,
+			effect: 'coverflow',
+			centeredSlides: true,
 			breakpoints: {
-        320: {
-          slidesPerView: 1
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-		<script src="./assets/js/app.js" defer></script>
-	</body>
+				320: {
+					slidesPerView: 1
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+			},
+		});
+	</script>
+	<script src="./assets/js/app.js" defer></script>
+</body>
+
 </html>
