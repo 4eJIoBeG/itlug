@@ -36,17 +36,74 @@
 	}
 }
 
-/* 3. Улучшение доступности nav__link на сенсорных устройствах */
-@media (hover: none) {
-	.nav__item.active .nav__link::after {
-		opacity: 1; /* Делаем подчеркивание видимым всегда, когда ссылка активна */
-		width: 100%;
+/* 3. Исправление для открытия меню при достижении брейкпоинта */
+@media (max-width: 1170px) {
+	.header__menu {
+		transform: translateY(-200%);
+		opacity: 0;
+		transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+		z-index: -1;
 	}
-	.nav__link::after {
-		display: none; /* По умолчанию не показываем подчеркивание на сенсорных устройствах */
+
+	.header.active .header__menu {
+		transform: translateY(0);
+		opacity: 1;
+		z-index: 10;
 	}
-	.nav__item.active .nav__link {
-		color: #e6e7e8; /* Поддерживаем цвет активной ссылки */
+
+	.header__burger {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin-left: auto;
+		height: 30px;
+		width: 40px;
+		background: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		transform-origin: center;
+	}
+
+	.header__burger:hover {
+		scale: 1.1;
+	}
+
+	.header__burger:active {
+		scale: 0.9;
+	}
+
+	.header__burger.active {
+		rotate: 360deg;
+	}
+
+	.header__burger span {
+		width: 75%;
+		height: 2px;
+		background: #e9e9e9;
+		transition: all 0.3s ease;
+		transform-origin: center;
+	}
+
+	.header__burger span:nth-child(1),
+	.header__burger span:nth-child(3) {
+		transition-delay: 0.3s;
+	}
+
+	.header__burger.active span:nth-child(2) {
+		scale: 0;
+	}
+
+	.header__burger.active span:nth-child(1) {
+		rotate: 45deg;
+		translate: 0 10px;
+	}
+
+	.header__burger.active span:nth-child(3) {
+		rotate: -45deg;
+		translate: 0 -10px;
 	}
 }
 
@@ -106,96 +163,11 @@ a.more-btn {
 }
 
 /* Swiper slider buttons END*/
-
-@media (max-width: 1024px) {
-	.header__menu {
-		top: 90px;
-		left: 0;
-		right: 0;
-		height: 100%;
-		width: 100dvw;
-		position: fixed;
-		bottom: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		background: var(--main-gradient);
-		gap: 10px;
-		padding-bottom: 90px;
-		transform: translateY(-200%);
-		transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
-		z-index: -1;
-		opacity: 0;
-		transition-delay: 0.3s;
+@media (max-width: 1333px) {
+	.nav__list {
+		gap: 0;
 	}
-
-	.header.active .header__menu {
-		transform: translateY(0);
-		opacity: 1;
-	}
-
-	.header__nav-menu,
-	.header__nav-account {
-		flex-direction: column;
-		margin: 0;
-		gap: 10px;
-		max-width: 150px;
-		width: 100%;
-	}
-
-	.header__burger {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		margin-left: auto;
-		height: 30px;
-		width: 40px;
-		background: transparent;
-		border: none;
-		padding: 0;
-		cursor: pointer;
-		transition: all 0.3s ease;
-		transform-origin: center;
-	}
-
-	.header__burger:hover {
-		scale: 1.1;
-	}
-
-	.header__burger:active {
-		scale: 0.9;
-	}
-
-	.header__burger.active {
-		rotate: 360deg;
-	}
-
-	.header__burger span {
-		width: 75%;
-		height: 2px;
-		background: #e9e9e9;
-		transition: all 0.3s ease;
-		transform-origin: center;
-	}
-
-	.header__burger span:nth-child(1),
-	.header__burger span:nth-child(3) {
-		transition-delay: 0.3s;
-	}
-
-	.header__burger.active span:nth-child(2) {
-		scale: 0;
-	}
-
-	.header__burger.active span:nth-child(1) {
-		rotate: 45deg;
-		translate: 0 10px;
-	}
-
-	.header__burger.active span:nth-child(3) {
-		rotate: -45deg;
-		translate: 0 -10px;
+	.nav__item {
+		padding: 10px;
 	}
 }
