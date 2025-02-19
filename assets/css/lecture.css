@@ -136,3 +136,8 @@
     }
 }
 
+@media (max-width: 425px) {
+	.lecture-video{
+        height: 400px;
+    }
+}
