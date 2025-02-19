@@ -110,7 +110,6 @@
 /* Reviews END */
 @media (max-width: 768px) {
 	.reviews-list {
-		display: flex;
 		flex-direction: column;
 		width: 100%;
 	}
