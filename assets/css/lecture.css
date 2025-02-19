@@ -7,9 +7,11 @@
   background-image: url(../img/announce/1.jpg);
   background-position: center center;
   background-size: cover;
-  height: 700px;
+  max-height: 700px;
+  width: 100%;
   position: relative;
   border-radius: 1px 1px 0px 0px;
+  aspect-ratio: 16/9;
 }
 .lecture-video img {
   position: absolute;
@@ -52,7 +54,7 @@
   margin-bottom: 20px;
 }
 .lecture-info__left p {
-    font-weight: 500;
+  font-weight: 500;
   font-size: 22px;
   color: #e6e7e8;
 }
@@ -136,11 +138,11 @@
 /* media queries */
 
 @media (max-width: 1832px) {
-    .lecture-photo {
-      flex-grow: 1;
-      max-width: none;
-    }
+  .lecture-photo {
+    flex-grow: 1;
+    max-width: none;
   }
+}
 
 @media (max-width: 718px) {
   .lecture-info__right::before,
@@ -158,9 +160,9 @@
     padding-bottom: 20px;
   }
 }
-
 @media (max-width: 425px) {
-  .lecture-video {
-    height: 400px;
+  .lecture-video img {
+    width: 50px;
+    height: 50px;
   }
 }
