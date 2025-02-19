@@ -93,9 +93,7 @@
 
 @media (max-width: 1024px) {
 	.speakers-list {
-		display: flex;
 		flex-direction: column;
-		width: 100%;
 		justify-content: center;
 		align-items: center;
 	}
@@ -206,37 +204,5 @@
 
 	.footer-logo-item {
 		max-width: 50%;
-	}
-}
-
-@media (max-width: 768px) {
-	.speakers-list {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
-}
-
-@media (max-width: 640px) {
-	.speakers-list {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
-}
-
-@media (max-width: 425px) {
-	.speakers-list {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
-}
-
-@media (max-width: 320px) {
-	.speakers-list {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
 	}
 }
