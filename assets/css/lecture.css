@@ -11,6 +11,10 @@
   position: relative;
   border-radius: 1px 1px 0px 0px;
 }
+.lecture-video-vk {
+  height: 700px;
+  width: 100%;
+}
 .lecture-video img {
   position: absolute;
   top: 50%;
