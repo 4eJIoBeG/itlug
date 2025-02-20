@@ -6,15 +6,30 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
+		<meta
+			name="description"
+			content="Описание курса лекций, семинаров и практических занятий 'ИТ по-Лугански'"
+		/>
+		<meta
+			name="keywords"
+			content="ИТ, Луганск, обучение, программирование, курсы, специалисты"
+		/>
 		<title>
 			Курс лекций, семинаров и практических занятий “ИТ по-Лугански”
 		</title>
+		<link rel="icon" type="image/x-icon" href="/icon.png" />
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<link rel="stylesheet" href="./assets/css/announce.css" />
-		<link rel="stylesheet" href="./assets/css/fix.css" />
+		<link rel="stylesheet" href="./assets/css/reviews.css" />
+		<link rel="stylesheet" href="./assets/css/masmedia.css" />
 		<!-- Link Swiper's CSS -->
-  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/fix.css" />
 	</head>
+
 	<body>
 		<header class="header">
 			<div class="container">
@@ -52,18 +67,27 @@
 							</li>
 							<li class="nav__item">
 								<a class="nav__link" href="#reviews" data-scroll-to="reviews"
-									>Отзывы</a
+									>О нас</a
 								>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#announces" data-scroll-to="announces"
+								<a
+									class="nav__link"
+									href="#announces"
+									data-scroll-to="announces"
 									>Анонсы</a
 								>
 							</li>
 							<li class="nav__item">
-								<a class="nav__link" href="#masMedia" data-scroll-to="masMedia"
+								<a
+									class="nav__link"
+									href="#masmedias"
+									data-scroll-to="masmedias"
 									>Мы в СМИ</a
 								>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="/pages/speakers.html">Спикеры</a>
 							</li>
 						</ul>
 						<ul class="nav__list header__nav-account">
@@ -107,7 +131,7 @@
 								src="./assets/img/logo-it.png"
 								alt="Сообщество ИТ специалистов г. Луганска"
 							/>
-							<span>Сообщество ИТ специалистов г.&nbspЛуганска</span>
+							<span>Сообщество ИТ специалистов г.&nbsp;Луганска</span>
 						</li>
 					</ul>
 				</div>
@@ -339,10 +363,88 @@
 				</ul>
 			</div>
 		</section>
-		
+
 		<section class="reviews" id="reviews">
 			<div class="container">
-				<h2 class="section-title">Отзывы</h2>
+				<h2 class="section-title">Что о нас говорят?</h2>
+				<div class="reviews-list">
+					<article class="review">
+						<div class="review-info">
+							<div class="review-info-inside">
+								<span>
+									<img src="./assets/img/reviews/Vector.png" alt="Frontend" />
+								</span>
+								<p class="review-description">
+									Господа, современная методология разработки прекрасно подходит
+									для реализации переосмысления внешнеэкономических политик.
+									Современные технологии достигли такого уровня,
+								</p>
+							</div>
+						</div>
+						<div class="review-image-wrapper">
+							<img
+								class="review-image"
+								src="./assets/img/reviews/avatar.png"
+								alt="Андрей Бобров"
+							/>
+							<span>Андрей Бобров</span>
+							<span>
+								<img src="./assets/img/reviews/stars.png" alt="Frontend" />
+							</span>
+						</div>
+					</article>
+					<article class="review">
+						<div class="review-info">
+							<div class="review-info-inside">
+								<span>
+									<img src="./assets/img/reviews/Vector.png" alt="Frontend" />
+								</span>
+								<p class="review-description">
+									Господа, современная методология разработки прекрасно подходит
+									для реализации переосмысления внешнеэкономических политик.
+									Современные технологии достигли такого уровня,
+								</p>
+							</div>
+						</div>
+						<div class="review-image-wrapper">
+							<img
+								class="review-image"
+								src="./assets/img/reviews/avatar.png"
+								alt="Андрей Бобров"
+							/>
+							<span>Андрей Бобров</span>
+							<span>
+								<img src="./assets/img/reviews/stars.png" alt="Frontend" />
+							</span>
+						</div>
+					</article>
+					<article class="review">
+						<div class="review-info">
+							<div class="review-info-inside">
+								<span>
+									<img src="./assets/img/reviews/Vector.png" alt="Frontend" />
+								</span>
+								<p class="review-description">
+									Господа, современная методология разработки прекрасно подходит
+									для реализации переосмысления внешнеэкономических политик.
+									Современные технологии достигли такого уровня,
+								</p>
+							</div>
+						</div>
+						<div class="review-image-wrapper">
+							<img
+								class="review-image"
+								src="./assets/img/reviews/avatar.png"
+								alt="Андрей Бобров"
+							/>
+							<span>Андрей Бобров</span>
+							<span>
+								<img src="./assets/img/reviews/stars.png" alt="Frontend" />
+							</span>
+						</div>
+					</article>
+				</div>
+				<button class="more-btn">Больше</button>
 			</div>
 		</section>
 		<section class="announces" id="announces">
@@ -386,11 +488,13 @@
 								<div class="announce-info">
 									<div class="announce-info-inside">
 										<a href="#" class="announce-link">
-											<h3 class="announce-title">Разработка мобильных приложений</h3>
+											<h3 class="announce-title">
+												Разработка мобильных приложений
+											</h3>
 										</a>
 										<p class="announce-description">
 											Лектор: Фамилия Имя <br />
-													Коворкинг Cluster - 19.10.2024 - 14:00
+											Коворкинг Cluster - 19.10.2024 - 14:00
 										</p>
 									</div>
 								</div>
@@ -412,7 +516,7 @@
 										</a>
 										<p class="announce-description">
 											Лектор: Фамилия Имя <br />
-													Коворкинг Cluster - 24.08.2024 - 14:00
+											Коворкинг Cluster - 24.08.2024 - 14:00
 										</p>
 									</div>
 								</div>
@@ -430,11 +534,13 @@
 								<div class="announce-info">
 									<div class="announce-info-inside">
 										<a href="#" class="announce-link">
-											<h3 class="announce-title">Веб-дизайн и его практическое применение в ИТ</h3>
+											<h3 class="announce-title">
+												Веб-дизайн и его практическое применение в ИТ
+											</h3>
 										</a>
 										<p class="announce-description">
 											Лектор: Фамилия Имя <br />
-													Коворкинг Cluster - 17.08.2024 - 14:00
+											Коворкинг Cluster - 17.08.2024 - 14:00
 										</p>
 									</div>
 								</div>
@@ -445,10 +551,248 @@
 					</div>
 					<button class="more-btn">Больше</button>
 				</div>
+			</div>
 		</section>
-		<section class="masMedia" id="masMedia">
+		<section class="masmedias" id="masmedias">
 			<div class="container">
 				<h2 class="section-title">Мы в СМИ</h2>
+				<div class="masmedia-list">
+					<article class="masmedia">
+						<div class="masmedia-info">
+							<div class="masmedia-info-inside">
+								<a href="#">
+									<div class="announce-image-wrapper">
+										<img
+											class="announce-image"
+											src="./assets/img/masmedia/preview.png"
+											alt="О нас в сми"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="masmedia-image-wrapper">
+							<div>Андрей Бобров</div>
+							<div>
+								<span>
+									<img
+										src="./assets/img/masMedia/eye-icon.png"
+										alt="views counter"
+									/> </span
+								>100
+							</div>
+						</div>
+					</article>
+					<article class="masmedia">
+						<div class="masmedia-info">
+							<div class="masmedia-info-inside">
+								<a href="#">
+									<div class="announce-image-wrapper">
+										<img
+											class="announce-image"
+											src="./assets/img/masmedia/preview.png"
+											alt="О нас в сми"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="masmedia-image-wrapper">
+							<div>Андрей Бобров</div>
+							<div>
+								<span>
+									<img
+										src="./assets/img/masMedia/eye-icon.png"
+										alt="views counter"
+									/> </span
+								>100
+							</div>
+						</div>
+					</article>
+					<article class="masmedia">
+						<div class="masmedia-info">
+							<div class="masmedia-info-inside">
+								<a href="#">
+									<div class="announce-image-wrapper">
+										<img
+											class="announce-image"
+											src="./assets/img/masmedia/preview.png"
+											alt="О нас в сми"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="masmedia-image-wrapper">
+							<div>Андрей Бобров</div>
+							<div>
+								<span>
+									<img
+										src="./assets/img/masMedia/eye-icon.png"
+										alt="views counter"
+									/> </span
+								>100
+							</div>
+						</div>
+					</article>
+					<article class="masmedia">
+						<div class="masmedia-info">
+							<div class="masmedia-info-inside">
+								<a href="#">
+									<div class="announce-image-wrapper">
+										<img
+											class="announce-image"
+											src="./assets/img/masmedia/preview.png"
+											alt="О нас в сми"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="masmedia-image-wrapper">
+							<div>Андрей Бобров</div>
+							<div>
+								<span>
+									<img
+										src="./assets/img/masMedia/eye-icon.png"
+										alt="views counter"
+									/> </span
+								>100
+							</div>
+						</div>
+					</article>
+					<article class="masmedia">
+						<div class="masmedia-info">
+							<div class="masmedia-info-inside">
+								<a href="#">
+									<div class="announce-image-wrapper">
+										<img
+											class="announce-image"
+											src="./assets/img/masmedia/preview.png"
+											alt="О нас в сми"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="masmedia-image-wrapper">
+							<div>Андрей Бобров</div>
+							<div>
+								<span>
+									<img
+										src="./assets/img/masMedia/eye-icon.png"
+										alt="views counter"
+									/> </span
+								>100
+							</div>
+						</div>
+					</article>
+					<article class="masmedia">
+						<div class="masmedia-info">
+							<div class="masmedia-info-inside">
+								<a href="#">
+									<div class="announce-image-wrapper">
+										<img
+											class="announce-image"
+											src="./assets/img/masmedia/preview.png"
+											alt="О нас в сми"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="masmedia-image-wrapper">
+							<div>Андрей Бобров</div>
+							<div>
+								<span>
+									<img
+										src="./assets/img/masMedia/eye-icon.png"
+										alt="views counter"
+									/> </span
+								>100
+							</div>
+						</div>
+					</article>
+					<article class="masmedia">
+						<div class="masmedia-info">
+							<div class="masmedia-info-inside">
+								<a href="#">
+									<div class="announce-image-wrapper">
+										<img
+											class="announce-image"
+											src="./assets/img/masmedia/preview.png"
+											alt="О нас в сми"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="masmedia-image-wrapper">
+							<div>Андрей Бобров</div>
+							<div>
+								<span>
+									<img
+										src="./assets/img/masMedia/eye-icon.png"
+										alt="views counter"
+									/> </span
+								>100
+							</div>
+						</div>
+					</article>
+					<article class="masmedia">
+						<div class="masmedia-info">
+							<div class="masmedia-info-inside">
+								<a href="#">
+									<div class="announce-image-wrapper">
+										<img
+											class="announce-image"
+											src="./assets/img/masmedia/preview.png"
+											alt="О нас в сми"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="masmedia-image-wrapper">
+							<div>Андрей Бобров</div>
+							<div>
+								<span>
+									<img
+										src="./assets/img/masMedia/eye-icon.png"
+										alt="views counter"
+									/> </span
+								>100
+							</div>
+						</div>
+					</article>
+					<article class="masmedia">
+						<div class="masmedia-info">
+							<div class="masmedia-info-inside">
+								<a href="#">
+									<div class="announce-image-wrapper">
+										<img
+											class="announce-image"
+											src="./assets/img/masmedia/preview.png"
+											alt="О нас в сми"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="masmedia-image-wrapper">
+							<div>Андрей Бобров</div>
+							<div>
+								<span>
+									<img
+										src="./assets/img/masMedia/eye-icon.png"
+										alt="views counter"
+									/> </span
+								>100
+							</div>
+						</div>
+					</article>
+				</div>
+				<button class="more-btn">Больше</button>
 			</div>
 		</section>
 		<footer class="footer">
@@ -612,7 +956,7 @@
 								</div>
 							</div>
 							<div class="form-preloader">
-								<img src="assets/img/preloader.svg" />
+								<img src="assets/img/preloader.svg" alt="preload img" />
 							</div>
 						</form>
 					</div>
@@ -699,7 +1043,7 @@
 								</div>
 							</div>
 							<div class="form-preloader">
-								<img src="assets/img/preloader.svg" />
+								<img src="assets/img/preloader.svg" alt="preload img" />
 							</div>
 						</form>
 					</div>
@@ -709,32 +1053,35 @@
 		<div class="modal-backdrop"></div>
 
 		<!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-			breakpoints: {
-        320: {
-          slidesPerView: 1
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.mySwiper', {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				loop: true,
+				effect: 'coverflow',
+				centeredSlides: true,
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+					},
+					1024: {
+						slidesPerView: 3,
+						spaceBetween: 30,
+					},
+				},
+			})
+		</script>
 		<script src="./assets/js/app.js" defer></script>
 	</body>
 </html>

@@ -81,6 +81,8 @@
 .announce-title {
 	margin: 0 0 5px;
 	width: 100%;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
 	font-size: clamp(18px, 1.5vw, 30px);
 	line-height: 100%;
 }
@@ -95,7 +97,7 @@
 }
 
 .announce:hover .announce-image {
-	transform: scale(1.2) rotate(5deg);
+	transform: scale(1.1);
 }
 
 /* Announces END */
@@ -124,21 +126,8 @@
 	height: 100%;
 	object-fit: cover;
 }
-
-/* Swiper END */
-
-/* Button for announces section */
-
-.more-btn {
-	background-color: var(--color-2);
-	width: 190px;
-	height: 50px;
-	border: none;
-	border-radius: 1px;
-	font-size: 20px;
-	line-height: 20px;
-	color: #fff;
-	cursor: pointer;
+.swiper-pagination {
+	margin-top: 5rem;
+	position: relative;
 }
-
-/* Button for announces section END*/
+/* Swiper END */
