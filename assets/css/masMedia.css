@@ -1,0 +1,136 @@
+/* masmedia */
+
+.masmedias {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100dvh;
+	background: #f1f1f1;
+}
+.masmedias .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.masmedia-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-bottom: 3rem;
+}
+
+.masmedia .section-title {
+	color: var(--color-4);
+}
+
+.masmedia {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 535px;
+	max-height: 100%;
+	transition: all 0.3s ease;
+	margin: 5px auto;
+}
+
+.masmedia-link {
+	text-decoration: none;
+	color: #ffffff;
+	transition: color 0.3s ease;
+}
+
+.masmedia-link:hover {
+	color: #412c6d;
+}
+
+.masmedia-info {
+	display: flex;
+	justify-content: center;
+}
+
+.masmedia-info-inside {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+.masmedia-image-wrapper {
+	gap: 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.masmedia-image {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 0.3s ease;
+}
+
+.masmedia-title {
+	margin: 0 0 5px;
+	width: 100%;
+	font-size: clamp(18px, 1.5vw, 30px);
+	line-height: 100%;
+}
+
+.masmedia-description {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 0%;
+}
+
+.masmedia:hover {
+	transform: scale(1.05);
+}
+
+/* masmedia END */
+@media (max-width: 768px) {
+	.masmedia-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media (max-width: 640px) {
+	.masmedia-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media (max-width: 475px) {
+	.masmedia-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	.masmedia-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
