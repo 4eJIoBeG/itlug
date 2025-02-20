@@ -1,0 +1,140 @@
+/* Reviews */
+
+.reviews {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100dvh;
+	background: #f1f1f1;
+}
+.reviews .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.reviews-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	margin-bottom: 3rem;
+}
+
+.reviews .section-title {
+	color: var(--color-4);
+}
+
+.review {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: 580px;
+	height: 580px;
+	transition: box-shadow 0.3s ease;
+	margin: 0 auto;
+	background-color: #fafafa;
+}
+
+.review-link {
+	text-decoration: none;
+	color: #ffffff;
+	transition: color 0.3s ease;
+}
+
+.review-link:hover {
+	color: #412c6d;
+}
+
+.review-info {
+	display: flex;
+	justify-content: center;
+}
+
+.review-info-inside {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	gap: 30px;
+}
+
+.review-image-wrapper {
+	margin-bottom: 20px;
+	gap: 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.review-image-wrapper span {
+	color: #585858;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.review-image-wrapper::before {
+	content: '';
+	border: 1px solid #8f8f8f;
+	width: 200px;
+}
+
+.review-image {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 0.3s ease;
+}
+
+.review-title {
+	margin: 0 0 5px;
+	width: 100%;
+	font-size: clamp(18px, 1.5vw, 30px);
+	line-height: 100%;
+}
+
+.review-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #585858;
+	text-align: center;
+}
+
+/* Reviews END */
+@media (max-width: 768px) {
+	.reviews-list {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media (max-width: 640px) {
+	.reviews-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media (max-width: 475px) {
+	.reviews-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	.reviews-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
