@@ -60,18 +60,17 @@
 	gap: 30px;
 }
 
-.masmedia-image-wrapper {
+.masmedia-text-wrapper {
 	gap: 20px;
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
+	color: #585858;
 	font-family: Inter;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 20px;
-	letter-spacing: 0%;
 	text-align: center;
 }
 
@@ -88,14 +87,6 @@
 	width: 100%;
 	font-size: clamp(18px, 1.5vw, 30px);
 	line-height: 100%;
-}
-
-.masmedia-description {
-	font-family: Inter;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 20px;
-	letter-spacing: 0%;
 }
 
 .masmedia:hover {
