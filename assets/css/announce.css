@@ -22,7 +22,7 @@
 	background-position: center;
 }
 .announces .section-title {
-	color: #ffffff;
+	color: #e6e7e8;
 }
 
 .announce {
@@ -33,7 +33,7 @@
 
 .announce-link {
 	text-decoration: none;
-	color: #ffffff;
+	color: #e6e7e8;
 	transition: color 0.3s ease;
 }
 
@@ -90,7 +90,7 @@
 .announce-description {
 	font-size: clamp(14px, 1.5vw, 22px);
 	line-height: 115%;
-	color: #ffffff;
+	color: #e6e7e8;
 	margin: 0;
 	-webkit-line-clamp: 2;
 	line-clamp: 2;

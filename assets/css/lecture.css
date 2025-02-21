@@ -12,7 +12,7 @@
 	border-radius: 1px 1px 0px 0px;
 }
 .lecture-video-vk {
-  height: 700px;
+	height: clamp(400px, 50vw, 700px);
   width: 100%;
 }
 .lecture-video img {
@@ -147,6 +147,8 @@
 }
 
 @media (max-width: 718px) {
+	.lecture-video-vk {
+	}
 	.lecture-info__right::before,
 	.lecture-info__left::before {
 		display: none;
