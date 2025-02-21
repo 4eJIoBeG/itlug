@@ -12,8 +12,8 @@
 	border-radius: 1px 1px 0px 0px;
 }
 .lecture-video-vk {
-	height: clamp(400px, 50vw, 700px);
-  width: 100%;
+	height: clamp(300px, 50vw, 700px);
+	width: 100%;
 }
 .lecture-video img {
 	position: absolute;
