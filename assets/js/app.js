@@ -780,10 +780,17 @@ class App {
 			} else if (password.length < 5 || password.length > 10) {
 				errors.push(this.#fieldErrors.passwordLengthError)
 				isValid = false
-			}
-			if (!/(?=.*[!@#$%^&*])/.test(password)) {
-				errors.push(this.#fieldErrors.passwordSpecCharError)
-				isValid = false
+			} else {
+				// Проверка на наличие специального символа
+				if (!/(?=.*[!@#$%^&*])/.test(password)) {
+					errors.push(this.#fieldErrors.passwordSpecCharError)
+					isValid = false
+				}
+				// Новая проверка на наличие хотя бы одной заглавной буквы
+				if (!/(?=.*[A-Z])/.test(password)) {
+					errors.push('Пароль должен содержать хотя бы одну заглавную букву.')
+					isValid = false
+				}
 			}
 			if (password !== password2) {
 				errors.push(this.#fieldErrors.passwordConfirmError)
