@@ -147,8 +147,6 @@
 }
 
 @media (max-width: 718px) {
-	.lecture-video-vk {
-	}
 	.lecture-info__right::before,
 	.lecture-info__left::before {
 		display: none;
